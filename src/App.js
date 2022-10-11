@@ -17,7 +17,7 @@ export default function App() {
   };
   useEffect(() => {
     return () => clearInterval(timer);
-  });
+  }, [timer]);
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
